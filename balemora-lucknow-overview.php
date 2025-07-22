@@ -1,60 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balemora</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
-
-
-<body>
-
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="menuBtn">
-                    <div class="bar_line"></div>
-                    <div class="bar_line"></div>
-                    <div class="bar_line"></div>
-                </div>
-
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/logos/newLogowhite.png" alt="" class="white-logo">
-                        <img src="assets/logos/newLogowhitecolored.png" alt="" class="color-logo">
-                    </a>
-                </div>                
-                <button class="header-book-now" data-bs-toggle="modal" data-bs-target="#bookingModal" type="button">Book Now</button>
-            </div>
-        </div>
-    </header>
-
-    <div class="side-bar">
-        <div class="close-btn">X</div>
-        <h3><a href="index.html"> Balemora </a> </h3>
-        <ul class="navbar-nav">
-            <!-- <li class="nav-item"><span class="nav-link">Balemora Lucknow </span> </li> -->
-            <li class="nav-item"><a href="balemora-lucknow-overview.html" class="nav-link">Home </a> </li>
-            <li class="nav-item"><a href="balemora-wellness.html" class="nav-link">Balemora Wellness </a> </li>
-            <li class="nav-item"><a href="balemora-lucknow-living.html" class="nav-link">Living </a> </li>
-            <li class="nav-item"><a href="balemora-lucknow-events-celebration.html" class="nav-link">Events <span class="symbol-font">&</span> Celebration </a> </li>
-            <li class="nav-item"><a href="balemora-lucknow-gallery.html" class="nav-link">Gallery </a> </li>
-            <li class="nav-item"><a href="balemora-lucknow-special-offers.html" class="nav-link">Special Offers </a> </li>
-            <li class="nav-item"><a href="balemora-lucknow-contact-us.html" class="nav-link">Contact Us </a> </li>
-        </ul>
-    </div>
+<?php
+    include 'includes/lucknow/header-link.php';
+    include 'includes/lucknow/header.php';
+?>
 
     <main>
         <section class="main-home-banner">
@@ -100,7 +47,7 @@
                 <div class="ws_text">
                     <h3>Ayurvedic Treatments </h3>
                     <p>Ancient hands meet modern needs, guiding you back to balance with therapies that heal from skin to soul. Every touch becomes a conversation between nature and you.</p>
-                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.html">Explore More</a> </div> </div>
+                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.php">Explore More</a> </div> </div>
                 </div>
             </div>
             <div class="ws_item">
@@ -108,7 +55,7 @@
                 <div class="ws_text">
                     <h3>Ayurvedic Nutrition </h3>
                     <p>Food becomes medicine as you savor meals crafted to nourish, cleanse, and restore. Each bite carries the wisdom of herbs, spices, and mindful intention. </p>
-                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.html">Explore More</a> </div> </div>
+                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.php">Explore More</a> </div> </div>
                 </div>
             </div>
             <div class="ws_item">
@@ -116,7 +63,7 @@
                 <div class="ws_text">
                     <h3>Yoga </h3>
                     <p>Awaken your body’s quiet intelligence through mindful movement and breath. It is a practice where strength softens and stillness becomes your truest power.</p>
-                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.html">Explore More</a> </div> </div>
+                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.php">Explore More</a> </div> </div>
                 </div>
             </div>
             <div class="ws_item">
@@ -124,7 +71,7 @@
                 <div class="ws_text">
                     <h3>Detox </h3>
                     <p>Shed what no longer serves in body, mind, and spirit. This is a cleansing designed to purify and renew your sense of lightness and vitality.</p>
-                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.html">Explore More</a> </div> </div>
+                    <div class="mt-3"><div class="cs-btn"><a class="btn" href="balemora-wellness.php">Explore More</a> </div> </div>
                 </div>
             </div>
         </section>
@@ -159,7 +106,7 @@
                                         </div>
                                         <h3>Heritage Family Cottage </h3>
 
-                                        <a href="balemora-lucknow-living.html">Explore <span class="arrow-icon">
+                                        <a href="balemora-lucknow-living.php">Explore <span class="arrow-icon">
                                             <img src="assets/icons/black-arrow.png" alt=""></span>
                                         </a>
 
@@ -187,7 +134,7 @@
                                             </div>
                                         </div>
                                         <h3>Heritage Vintage Boat House Cottage </h3>
-                                        <a href="balemora-lucknow-living.html">Explore <span class="arrow-icon">
+                                        <a href="balemora-lucknow-living.php">Explore <span class="arrow-icon">
                                             <img src="assets/icons/black-arrow.png" alt=""></span>
                                         </a>
                                     </div>
@@ -244,7 +191,7 @@
                                     <li><img src="assets/icons/user.png" alt="people"> <span>6,500 PAX</span> </li>
                                     <li><img src="assets/icons/car-parking.png" alt="people"> <span>500+ Parking Spaces </span></li>
                                 </ul>
-                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.html">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>
+                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.php">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>
                             </div>
 
                             <div class="wedding-item">
@@ -255,7 +202,7 @@
                                     <li><img src="assets/icons/user.png" alt="people"> <span>6,500 PAX</span> </li>
                                     <li><img src="assets/icons/car-parking.png" alt="people"> <span>500+ Parking Spaces </span></li>
                                 </ul>
-                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.html">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>                                
+                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.php">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>                                
                             </div>
 
                             <div class="wedding-item">
@@ -266,7 +213,7 @@
                                     <li><img src="assets/icons/user.png" alt="people"> <span>6,500 PAX</span> </li>
                                     <li><img src="assets/icons/car-parking.png" alt="people"> <span>500+ Parking Spaces </span></li>
                                 </ul>
-                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.html">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>                                
+                                <div class="wd-btn"><a href="balemora-lucknow-events-celebration.php">Explore <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span> </a> </div>                                
                             </div>
                         </div>
                     </div>
@@ -287,7 +234,7 @@
                                     <p>Discover the sacred city of Lord Ram, where devotion and history come alive.
                                         Explore revered temples, visit iconic landmarks, and experience the serenity of
                                         the Sarayu River.</p>
-                                    <a href="balemora-lucknow-special-offers.html">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
+                                    <a href="balemora-lucknow-special-offers.php">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -296,7 +243,7 @@
                                     <h4>Exclusive Long Stay Offers</h4>
                                     <p>Extend your getaway and enjoy special discounts, premium comforts, and
                                         personalized services. Perfect for workcations or leisure stays.</p>
-                                    <a href="balemora-lucknow-special-offers.html">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
+                                    <a href="balemora-lucknow-special-offers.php">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -306,7 +253,7 @@
                                     <p>Immerse yourself in a spiritual journey through the Ayodhya-Varanasi belt,
                                         exploring significant Buddhist landmarks with curated experiences designed for
                                         inner peace and reflection.</p>
-                                    <a href="balemora-lucknow-special-offers.html">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
+                                    <a href="balemora-lucknow-special-offers.php">Explore More <span class="arrow-icon"><img src="assets/icons/black-arrow.png" alt=""></span></a>
                                 </div>
                             </div>
                         </div>
@@ -383,145 +330,6 @@
     </main>
 
 
-    <footer class="new-footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <div class="footer-logo"><a href="/"><img src="assets/logos/newLogowhite.png" alt=""> </a> </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <div class="quick-link-box">
-                        <h6>Quick Links</h6>
-                        <ul>
-                            <li><a class="text-white" href="index.html">Home</a></li>
-                            <li><a class="text-white" href="balemora-wellness.html">Balemora Wellness</a></li>
-                            <li><a class="text-white" href="balemora-lucknow-events-celebration.html">Events & Celebration</a></li>
-                            <li><a class="text-white" href="about-us.html">About Us</a></li>
-                            <li><a class="text-white" href="gallery.html">Gallery</a></li>
-                            <li><a class="text-white" href="special-offers.html">Special Offers</a></li>
-                            <li><a class="text-white" href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="footer-resort">
-                        <h6>Our Retreats</h6>
-                        <p><a href="balemora-lucknow-overview.html"><b>Lucknow</b><br>Balemora NH27 Lucknow, Uttar Pradesh</a> </p>
-                        <p><a href="balemora-almora-overview.html"><b>Almora</b><br>Balemora Almora, Uttarakhand</a> </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h6>Contact Us</h6>
-                    <p class="f-info"><a href="tel:919005430333"><i class="fa-solid fa-phone"></i> +91 9005430333 </a> </p>
-                    <p class="f-info">
-                        <a href="mailto:customercare@balemorawellnessretreats.com"><i class="fa-solid fa-envelope"></i> 
-                        customercare@balemorawellnessretreats.com </a><br>
-                        <a href="mailto:ceo.dr.sumitoberoi@balemorawellnessretreats.com"><i class="fa-solid fa-envelope"></i> 
-                        ceo.dr.sumitoberoi@balemorawellnessretreats.com </a>                        
-                    </p>
-
-                    <h6>Follow Us</h6>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
-                        <a href="#"><i class="fab fa-instagram"></i> </a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i> </a>
-                        <a href="#"><img src="assets/images/x-icon.png" alt=""> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-4">
-                    <p class="copyright">Copyright &copy; 2025 Balemora. All Rights Reserved. Powered By <a href="https://www.internetmoguls.com/" style="color: #fff;" target="_blank">Internet Moguls</a> </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="bookingModalLabel">Book Now</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="booking-popup-form">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Your Name">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="tel" name="" id="" placeholder="Phone No">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Check In">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Check Out">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-room" selected disabled>Select Rooms</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-adults" selected disabled>Select Adults</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-adults" selected disabled>Select Child</option>
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <input type="submit" name="" id="" value="Submit">
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
-    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script defer src="assets/js/script.js"></script>
-    
-</body>
-
-</html>
+<?php
+    include 'includes/lucknow/footer.php';
+?>
