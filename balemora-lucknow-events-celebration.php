@@ -259,26 +259,30 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="" class="offer-popup-form">
+        <form id="eventForm" class="offer-popup-form">
           <div class="row">
             <div class="col-12">
+              <label id="nameErr" class="text-danger"></label>
               <div class="form-group">
-                <input type="text" name="" id="" placeholder="Your Name">
+                <input type="text" name="name" id="name" placeholder="Your Name">
               </div>
             </div>
             <div class="col-12">
+              <label id="emailErr" class="text-danger"></label>
               <div class="form-group">
-                <input type="email" name="" id="" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email">
               </div>
             </div>
             <div class="col-12">
+              <label id="numberErr" class="text-danger"></label>
               <div class="form-group">
-                <input type="tel" name="" id="" placeholder="Phone No">
+                <input type="tel" name="number" id="number" placeholder="Phone No">
               </div>
             </div>
             <div class="col-12">
+              <label id="lawnErr" class="text-danger"></label>
               <div class="form-group">
-                <select name="" id="">
+                <select name="lawn" id="lawn">
                   <option value="select-lawn" selected disabled>Select Lawn</option>
                   <option value="The Scarlet Lawn">The Scarlet Lawn</option>
                   <option value="Moon Light Meadows Lawn">Moon Light Meadows Lawn</option>
@@ -287,10 +291,11 @@
               </div>
             </div>
             <div class="col-12">
-              <textarea name="" id=""></textarea>
+              <label id="messageErr" class="text-danger"></label>
+              <textarea name="message" id="message" placeholder="message"></textarea>
             </div>
             <div class="col-12">
-              <input type="submit" name="" id="" value="Submit">
+              <input type="submit" name="eventBtn" id="eventBtn" value="Submit">
             </div>
           </div>
         </form>

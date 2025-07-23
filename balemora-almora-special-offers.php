@@ -95,7 +95,7 @@
         </section> -->
 </main>
 
-<div class="modal fade" id="weddingModal" tabindex="-1" aria-labelledby="weddingModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="weddingModal" tabindex="-1" aria-labelledby="weddingModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -135,6 +135,62 @@
                         </div>
                         <div class="col-12">
                             <input type="submit" name="" id="" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="offerModalLabel">Enquire Now</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="offer-form" class="offer-popup-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <label id="nameErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="emailErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="numberErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="tel" name="number" id="number" placeholder="Phone No">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label id="offerErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <select name="offer" id="offer">
+                                    <option value="select-offer" selected disabled>Select Offer</option>
+                                    <option value="Ayodhya: A Spiritual Gateway">Ayodhya: A Spiritual Gateway
+                                    </option>
+                                    <option value="Exclusive Long Stay Offers">Exclusive Long Stay Offers</option>
+                                    <option value="Buddhist Pilgrimage Experience">Buddhist Pilgrimage Experience
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="hidden" id="property" name="property" value="Balemora Almora" />
+                        <div class="col-12">
+                            <label id="messageErr" class="text-danger"></label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" name="offerBtn" id="offerBtn" value="Submit">
                         </div>
                     </div>
                 </form>

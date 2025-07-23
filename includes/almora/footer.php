@@ -60,88 +60,98 @@
     </div>
 </footer>
 
-  <!-- Modal -->
-    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="bookingModalLabel">Book Now</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="booking-popup-form">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Your Name">
-                                </div>
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bookingModalLabel">Book Now</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" class="booking-popup-form" method="post">
+                    <div class="row">
+                        <div class="col-12">
+                            <label id="nameErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
                             </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="tel" name="" id="" placeholder="Phone No">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Check In">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" placeholder="Check Out">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-room" selected disabled>Select Rooms</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-adults" selected disabled>Select Adults</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <select name="" id="">
-                                        <option value="select-adults" selected disabled>Select Child</option>
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <input type="submit" name="" id="" value="Submit">
-                            </div>
-
                         </div>
-                    </form>
-                </div>
+                        <div class="col-12">
+                            <label id="numberErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="tel" name="number" id="number" placeholder="Phone No">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="check-inErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="text" name="check-in" id="check-in" placeholder="Check In">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="check-outErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <input type="text" name="check-out" id="check-out" placeholder="Check Out">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="roomErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <select name="rooms" id="rooms">
+                                    <option value="" selected disabled>Select Rooms</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="adultErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <select name="adults" id="adults">
+                                    <option value="" selected disabled>Select Adults</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label id="childErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <select name="child" id="child">
+                                    <option value="child" selected disabled>Select Child</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input type="hidden" id="property" name="property" value="Balemora Almora" />
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" name="bookingBtn" id="bookingBtn" value="Submit">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
-    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script defer src="assets/js/script.js"></script>
-    
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
+<script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script defer src="assets/js/script.js"></script>
+<script defer src="assets/js/form-submition.js"></script>
+
 </body>
 
 </html>

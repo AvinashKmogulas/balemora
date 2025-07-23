@@ -1183,21 +1183,28 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="" class="offer-popup-form">
+                <form id="programForm" class="offer-popup-form">
                     <div class="row">
                         <div class="col-12">
-                            <div class="form-group"><input type="text" name="" id="" placeholder="Your Name"> </div>
+                            <label id="nameErr" class="text-danger"></label>
+                            <div class="form-group"><input type="text" name="name" id="name" placeholder="Your Name">
+                            </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group"><input type="tel" name="" id="" placeholder="Phone No"> </div>
+                            <label id="numberErr" class="text-danger"></label>
+                            <div class="form-group"><input type="tel" name="number" id="number" placeholder="Phone No">
+                            </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group"><input type="email" name="" id="" placeholder="Email"> </div>
+                            <label id="emailErr" class="text-danger"></label>
+                            <div class="form-group"><input type="email" name="email" id="email" placeholder="Email">
+                            </div>
                         </div>
                         <div class="col-12">
+                            <label id="programErr" class="text-danger"></label>
                             <div class="form-group">
-                                <select name="" id="">
-                                    <option value="select-offer" selected disabled>Choose your program </option>
+                                <select name="program" id="program">
+                                    <option value="" selected disabled>Choose your program </option>
                                     <option value="Ayurveda Tridosha Harmony Retreat">Ayurveda Tridosha Harmony Retreat
                                     </option>
                                     <option value="Ayurveda Soul Silence & Sound Detox">Ayurveda Soul Silence & Sound
@@ -1217,10 +1224,11 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <textarea name="" id="" placeholder="Message..."></textarea>
+                            <label id="messageErr" class="text-danger"></label>
+                            <textarea name="message" id="message" placeholder="Message..."></textarea>
                         </div>
                         <div class="col-12">
-                            <input type="submit" name="" id="" value="Submit">
+                            <input type="submit" name="programBtn" id="programBtn" value="Submit">
                         </div>
 
                     </div>

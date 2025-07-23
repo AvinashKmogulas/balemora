@@ -71,32 +71,37 @@
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
-                 <form action="" class="booking-popup-form">
+                 <form id="bookingForm" class="booking-popup-form" method="post">
                      <div class="row">
                          <div class="col-12">
+                             <label id="nameErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <input type="text" name="" id="" placeholder="Your Name">
+                                 <input type="text" name="name" id="name" placeholder="Your Name">
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="numberErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <input type="tel" name="" id="" placeholder="Phone No">
+                                 <input type="tel" name="number" id="number" placeholder="Phone No">
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="check-inErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <input type="text" name="" id="" placeholder="Check In">
+                                 <input type="text" name="check-in" id="check-in" placeholder="Check In">
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="check-outErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <input type="text" name="" id="" placeholder="Check Out">
+                                 <input type="text" name="check-out" id="check-out" placeholder="Check Out">
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="roomErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <select name="" id="">
-                                     <option value="select-room" selected disabled>Select Rooms</option>
+                                 <select name="rooms" id="rooms">
+                                     <option value="" selected disabled>Select Rooms</option>
                                      <option value="1">1</option>
                                      <option value="2">2</option>
                                      <option value="3">3</option>
@@ -105,9 +110,10 @@
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="adultErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <select name="" id="">
-                                     <option value="select-adults" selected disabled>Select Adults</option>
+                                 <select name="adults" id="adults">
+                                     <option value="" selected disabled>Select Adults</option>
                                      <option value="1">1</option>
                                      <option value="2">2</option>
                                      <option value="3">3</option>
@@ -116,9 +122,10 @@
                              </div>
                          </div>
                          <div class="col-12">
+                             <label id="childErr" class="text-danger"></label>
                              <div class="form-group">
-                                 <select name="" id="">
-                                     <option value="select-adults" selected disabled>Select Child</option>
+                                 <select name="child" id="child">
+                                     <option value="child" selected disabled>Select Child</option>
                                      <option value="0">0</option>
                                      <option value="1">1</option>
                                      <option value="2">2</option>
@@ -127,9 +134,11 @@
                              </div>
                          </div>
                          <div class="col-12">
-                             <input type="submit" name="" id="" value="Submit">
+                             <input type="hidden" id="property" name="property" value="Balemora NH27, Lucknow" />
                          </div>
-
+                         <div class="col-12">
+                             <input type="submit" name="bookingBtn" id="bookingBtn" value="Submit">
+                         </div>
                      </div>
                  </form>
              </div>
@@ -143,6 +152,7 @@
  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script defer src="assets/js/script.js"></script>
+ <script defer src="assets/js/form-submition.js"></script>
 
  </body>
 

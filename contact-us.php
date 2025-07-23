@@ -99,19 +99,24 @@
             <h2 class="main-heading text-center">Get in Touch</h2>
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <form action=" " class="contact-form-corporate">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" name="" id="" placeholder="Your Email">
-                        <input type="tel" name="" id="" placeholder="Phone Number">
-                        <input type="text" placeholder="Subject">
-                        <select name="cars" id="cars">
-                            <option value="volvo" selected>Select Property</option>
+                    <form id="contactForm" class="contact-form-corporate" method="post">
+                        <label id="nameErr" class="text-danger"></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <label id="emailErr" class="text-danger"></label>
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <label id="numberErr" class="text-danger"></label>
+                        <input type="tel" name="number" id="number" placeholder="Phone Number">
+                        <label id="subjectErr" class="text-danger"></label>
+                        <input type="text" placeholder="Subject" id="subject" name="subject">
+                        <label id="propertyErr" class="text-danger"></label>
+                        <select name="property" id="property">
+                            <option value="" selected>Select Property</option>
                             <option value="Balemora Almora">Balemora Almora</option>
                             <option value="Balemora Lucknow">Balemora NH27 Lucknow</option>
-
                         </select>
-                        <textarea name="" id=""></textarea>
-                        <input type="submit" value="Submit">
+                        <label id="messageErr" class="text-danger"></label>
+                        <textarea name="message" id="message"></textarea>
+                        <input type="submit" name="contactFormBtn" id="contactFormBtn" value="Submit">
                     </form>
                 </div>
             </div>
