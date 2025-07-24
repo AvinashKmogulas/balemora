@@ -95,9 +95,23 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        submitBtn.disabled = false;
-        submitBtn.value = "Submit";
-        alert("Form submitted successfully!");
+        
+        //send mail funtion to send email
+        let form = "bookingForm";
+        await sendMail({
+          data: {
+            name: name,
+            phone: number,
+            checkin: checkin,
+            checkout: checkout,
+            room: room,
+            adults: adults,
+            children: children,
+            property: property,
+          },
+          form,
+          submitBtn,
+        });
 
         window.location.href = "thank-you.php";
       } else {
@@ -174,9 +188,20 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        submitBtn.disabled = false;
-        submitBtn.value = "Submit";
-        alert("Form submitted successfully!");
+        
+        //send mail funtion to send email
+        let form = "programForm";
+        await sendMail({
+          data: {
+            name: name,
+            email: email,
+            phone: number,
+            program: program,
+            message: message,
+          },
+          form,
+          submitBtn,
+        });
 
         window.location.href = "thank-you.php";
       } else {
@@ -233,6 +258,10 @@ $(document).ready(function () {
     // current date
     let currentDate = new Date().toISOString().split("T")[0];
     // send data to google sheet
+
+    if (property == "") {
+      property = "Main Page";
+    }
     let fd = new FormData();
     fd.append("Name", name);
     fd.append("Phone", phone);
@@ -255,9 +284,21 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        submitBtn.disabled = false;
-        submitBtn.value = "Submit";
-        alert("Form submitted successfully!");
+
+        //send mail funtion to send email
+        let form = "offerForm";
+        await sendMail({
+          data: {
+            name: name,
+            email: email,
+            phone: phone,
+            offer: offer,
+            message: message,
+            property: property,
+          },
+          form,
+          submitBtn,
+        });
 
         window.location.href = "thank-you.php";
       } else {
@@ -344,9 +385,21 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        submitBtn.disabled = false;
-        submitBtn.value = "Submit";
-        alert("Form submitted successfully!");
+
+        //send mail funtion to send email
+        let form = "contactForm";
+        await sendMail({
+          data: {
+            name: name,
+            email: email,
+            phone: phone,
+            subject: subject,
+            message: message,
+            property: property,
+          },
+          form,
+          submitBtn,
+        });
 
         window.location.href = "thank-you.php";
       } else {
@@ -423,11 +476,22 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        submitBtn.disabled = false;
-        submitBtn.value = "Submit";
-        alert("Form submitted successfully!");
 
-        window.location.href = "thank-you.php";
+        //send mail funtion to send email
+        let property = "Balemora NH27 Lucknow";
+        let form = "eventForm";
+        await sendMail({
+          data: {
+            name: name,
+            email: email,
+            phone: phone,
+            lawn: lawn,
+            message: message,
+            property: property,
+          },
+          form,
+          submitBtn,
+        });
       } else {
         console.error("HTTP Error:", response.status);
         alert("Something went wrong while submitting. Please try again.");
@@ -437,4 +501,25 @@ $(document).ready(function () {
       alert("Network error. Please check your connection.");
     }
   });
+
+  async function sendMail({ data, form, submitBtn }) {
+    $.ajax({
+      url: "Mail/send-mail.php",
+      type: "POST",
+      data: { data, form },
+      success: function (response) {
+        console.log(response);
+        submitBtn.disabled = false;
+        submitBtn.value = "Submit";
+        alert("Form submitted successfully!");
+
+        window.location.href = "thank-you.php";
+      },
+      error: function (error) {
+        console.log(error);
+        submitBtn.disabled = false;
+        submitBtn.value = "Submit";
+      },
+    });
+  }
 });
