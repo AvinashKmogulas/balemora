@@ -132,7 +132,14 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <input type="hidden" id="property" name="property" value="Main Page" />
+                            <label id="propertyErr" class="text-danger"></label>
+                            <div class="form-group">
+                                <select name="property" id="property">
+                                    <option value="" hidden>Select Property</option>
+                                    <option value="Balemora Almora">Balemora Almora</option>
+                                    <option value="Balemora NH27, Lucknow">Balemora NH27, Lucknow</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-12">
                             <input type="submit" name="bookingBtn" id="bookingBtn" value="Submit">

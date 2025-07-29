@@ -39,6 +39,7 @@ $(document).ready(function () {
       "rooms",
       "adults",
       "child",
+      "property",
     ];
 
     clearErrors(bookingFields);
@@ -63,6 +64,8 @@ $(document).ready(function () {
       return showError("adults", "Please select number of adults"), false;
     if (!children)
       return showError("child", "Please select number of children"), false;
+    if (!property)
+      return showError("property", "Please select property"), false;
 
     let submitBtn = document.getElementById("bookingBtn");
     submitBtn.disabled = true;
@@ -95,7 +98,7 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        
+
         //send mail funtion to send email
         let form = "bookingForm";
         await sendMail({
@@ -188,7 +191,7 @@ $(document).ready(function () {
       if (response.ok) {
         let result = await response.text();
         console.log("Success:", result);
-        
+
         //send mail funtion to send email
         let form = "programForm";
         await sendMail({
